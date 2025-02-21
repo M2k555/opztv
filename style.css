@@ -1,0 +1,245 @@
+*{
+    /* การกำหนด font */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* กำหนด link style */
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    transition: 0.5s;
+}
+
+/*-----------menu------------*/
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: rgba(13, 183, 213, 0.66);
+    overflow: hidden;
+}
+.nav-con{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 12spx;
+    padding: 16px 18px;
+}
+.Menu{
+    display: flex;
+    overflow: hidden;
+}
+.Menu li{
+    float: left;
+    color: crimson;
+    list-style: none;
+    margin-left: 12px;
+    padding: 16px 18px;
+}
+
+.Menu a:active{
+    background-color: rgb(10, 207, 187);
+    text-decoration: none;
+}
+a{
+    color: aliceblue;
+
+}
+
+.logo{
+    font-size: 15px;
+}
+
+
+/* -----------------------dropdownmenu----------------------- */
+/* navbar container */
+.navbar{
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    /* font-family: arial; */
+
+}
+
+/* link inside navbar */
+.navbar a {
+    float: left;
+    font-size: 14px;
+    color: rgb(240, 250, 246);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* dropdown-container */
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+
+/* dropdown-btn */
+.dropdown .dropbtn{
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    padding: 14px 16px;
+    background-color: initial;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: rgb(20, 37, 220);
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+/* link inside dropdown */
+.dropdown-content a{
+    float: none;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color: rgb(6, 95, 95);
+
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+*{
+    /*การกำหนด font*/
+    font-family: cursive;
+    /* กำหนด link style */
+    text-decoration: none;
+
+}
+
+/* table style */
+.styled-table{
+    width: 100%;
+    border-collapse:collapse; 
+    margin: 25px 0; 
+
+}
+    /* ตกแต่งส่วนหัวของตาราง */
+    .styled-table th{
+        background-color: aquamarine;
+        color: rgb(255, 253, 141);
+        text-align: left;
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+    /* แถว */
+    .styled-table td{
+    text-align: center;
+    padding: 12px 18px;
+    border-collapse:collapse ;
+    border-bottom: 1px solid rgb(249, 255, 130);
+    font-size: 16px;
+    }
+
+    /* เปลี่ยนสีเมื่อวางเมาส์ */
+    .styled-table tr :hover{
+        background-color: rgb(103, 105, 105);
+
+    }
+    /* เพิ่มเส้นขอบรอบตาราง */
+    .styled-table, .styled-table th, .styled-table td{
+    border: 1px solid rgb(180, 190, 190);
+    }
+
+    /* -----------profile----------- */
+    .title {
+        padding: 12px;
+        text-align: center;
+        font-size: 30px;
+        
+    }
+    .pic {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        
+    }
+    .pich-item {
+        max-width: 1140px;
+        justify-content: center;
+        text-align: center;
+        animation-fill-mode: none;
+
+    }
+    .pich-item img {
+        width: 300px;
+        border-radius: 100%;
+        box-shadow: 0 0 10px;
+        align-items: center;
+        transform: scale(0.9);
+        
+    }
+    .pich-item img:hover{
+        transform: scale(1.0);
+    }
+    .pich-item {
+        font-size: 16px;
+        
+    }
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 1px rgb(255, 255, 255) solid;
+        max-width: 1140px;
+        margin: 0 auto;
+        column-gap: 14px;
+
+    }
+    .content-item {
+        border: 1px rgb(253, 253, 253) solid;
+        padding: 12px;
+        background-color: rgb(0, 0, 0.5);
+        border-radius: 30px;
+        box-shadow: 0 4px 8px 0 rgb(140, 142, 144);
+        transform: scale(0.9);
+       
+    }
+    .content-item:hover{
+        transform: scale(1.0);
+    }
+
+    .logo img{
+        transform: scale(0.9);
+    }
+    .logo img:hover{
+        transform: scale(1.0);
+    }
+    .Menu img:hover{
+        transform: scale(1.1);
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%; /* ให้ความสูงเต็มหน้าจอ */
+    }
+    
+    body {
+        background-image: url('img/ku.jpg'); /* กำหนดภาพพื้นหลัง */
+        background-size: cover; /* ขยายภาพให้เต็มหน้าจอ */
+        background-position: center; /* จัดให้อยู่ตรงกลาง */
+        background-repeat: no-repeat; /* ป้องกันการซ้ำภาพ */
+    }
+    
+    h1, p {
+        color: rgb(0, 0, 0); /* เปลี่ยนสีตัวอักษรให้ชัดเจนในพื้นหลัง */
+        text-align: center; /* จัดกึ่งกลาง */
+    }
